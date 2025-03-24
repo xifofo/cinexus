@@ -8,6 +8,18 @@
 - [Zap](https://github.com/uber-go/zap) - 日志库
 - [JWT](https://github.com/golang-jwt/jwt) - JSON Web Token 认证
 
+
+## DEV
+
+##### 生成 CD2 GRPC 代码
+
+```bash
+protoc --go_out=. --go_opt=paths=source_relative \
+--go-grpc_out=. --go-grpc_opt=paths=source_relative \
+core/pb/CloudDrive.proto
+```
+
+
 ## 项目结构
 
 ```
